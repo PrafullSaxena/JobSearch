@@ -23,7 +23,7 @@ def saveToCSV(jobsResult : list, Filename : str):
 
 def validate_Info(jobsResult : list, isRecent : bool, lookingFor: str):
     today = date.today();
-    Filename = str(lookingFor).replace('+', '_') + '-' + 'Jobs' + '-' + str(today) + '.xlsx'
+    Filename = str(lookingFor).replace('+', '_') + '-' + 'Jobs' + '-' + str(today) + '.csv'
     if isRecent:
         Filename = 'lastest-only' + Filename;
 
